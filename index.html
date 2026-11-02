@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¡Hola! — تعلّم الإسبانية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="brand"><span class="brand-mark">¡Hola!</span> <span class="brand-sub">تعلّم الإسبانية</span></a>
+    <nav class="main-nav">
+      <a href="#/" data-nav="home"><i class="fa-solid fa-book"></i><span>الوحدات</span></a>
+      <a href="#/vocab" data-nav="vocab"><i class="fa-solid fa-spell-check"></i><span>المفردات</span></a>
+      <a href="#/dele" data-nav="dele"><i class="fa-solid fa-award"></i><span>DELE A1</span></a>
+    </nav>
+    <div class="top-actions">
+      <div class="overall" title="تقدمك في الوحدات">
+        <div class="overall-bar"><div id="overallFill"></div></div>
+        <span id="overallText">0%</span>
+      </div>
+      <button id="themeBtn" class="icon-btn" aria-label="تبديل الوضع الليلي"><i class="fa-solid fa-moon"></i></button>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <footer class="foot">مبني على منهج <b>nuevo Prisma A1</b> ومواضيع اختبار <b>DELE A1</b> · اضغط على أي نص إسباني <i class="fa-solid fa-volume-high"></i> لسماع نطقه</footer>
+
+  <script src="data.js"></script>
+  <script src="vocab.js"></script>
+  <script src="dele.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
